@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6D-XQ-YZr">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6D-XQ-YZr">
                                 <rect key="frame" x="202" y="45" width="197" height="182"/>
                                 <animations/>
                                 <constraints>
@@ -50,7 +50,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="123 Clicks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-zf-qyJ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="123 Clicks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-zf-qyJ">
                                 <rect key="frame" x="156" y="244" width="300" height="45"/>
                                 <animations/>
                                 <constraints>
@@ -61,6 +61,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TAPPER" translatesAutoresizingMaskIntoConstraints="NO" id="gtL-6T-HU9">
+                                <rect key="frame" x="202" y="45" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ft3-dN-nLx"/>
+                                    <constraint firstAttribute="height" constant="128" id="laE-cZ-xyc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -72,12 +80,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LYu-bx-YQw" secondAttribute="bottom" id="DSb-OG-u0u"/>
                             <constraint firstItem="dB9-d8-b6h" firstAttribute="top" secondItem="oBx-Rk-Ddk" secondAttribute="bottom" constant="19" id="ELy-wS-JwP"/>
                             <constraint firstItem="LYu-bx-YQw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="FW6-vb-xig"/>
+                            <constraint firstItem="gtL-6T-HU9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KPc-yX-Mzj"/>
                             <constraint firstItem="oBx-Rk-Ddk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P7r-rF-2eY"/>
                             <constraint firstItem="LYu-bx-YQw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UIB-Z9-zeA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LYu-bx-YQw" secondAttribute="trailing" constant="-20" id="YLh-f4-HjQ"/>
                             <constraint firstItem="G6D-XQ-YZr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="ZYD-AE-6id"/>
                             <constraint firstItem="G6D-XQ-YZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aVj-fJ-cgZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dB9-d8-b6h" secondAttribute="bottom" constant="54" id="ay0-ab-GK6"/>
+                            <constraint firstItem="gtL-6T-HU9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="cIB-Ss-OLK"/>
                             <constraint firstItem="uJx-zf-qyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gOR-DC-KXE"/>
                             <constraint firstItem="dB9-d8-b6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p1i-Td-dme"/>
                         </constraints>
@@ -90,6 +100,7 @@
     </scenes>
     <resources>
         <image name="START" width="234" height="173"/>
+        <image name="TAPPER" width="508" height="109"/>
         <image name="backgroud" width="1118" height="1118"/>
         <image name="guzik" width="234" height="236"/>
     </resources>
